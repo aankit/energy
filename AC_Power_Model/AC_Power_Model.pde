@@ -67,9 +67,16 @@ void impedance() {
     t2 = theta + C - L;
   }
   if (C>0) {
+    fill(0);
+    textSize(20);
+    text((int)C, width-320, height/4);
+
     image(capacitor, width-400, height/4, 200, 200);
   }
   if (L>0) {
+    fill(0);
+    textSize(20);
+    text((int)L, width-510, height/4);
     image(inductor, width-600, height/14, 200, 200);
   }
 }
@@ -126,6 +133,20 @@ void keyPressed() {
 }
 
 void drawLabels() {
+  //legend
+  fill(255, 0, 0);
+  textSize(20);
+  text("Voltage", width/6, 20);
+  fill(0, 255, 0);
+  textSize(20);
+  text("Current", width/4, 20);
+  fill(0, 0, 255);
+  textSize(20);
+  text("Power", width/3, 20 );
+
+  //impendance
+
+  //generator
   fill(255, 0, 0);
   rect(0, 0, r, 20);
   fill(255);
