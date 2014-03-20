@@ -144,8 +144,6 @@ void drawLabels() {
   textSize(20);
   text("Power", width/3, 20 );
 
-  //impendance
-
   //generator
   fill(255, 0, 0);
   rect(0, 0, r, 20);
